@@ -30,7 +30,7 @@ Conway's Game of Life has its roots in another legendary mathematician's creatio
 A cellular automaton can have many forms, but the canonical one (off of which Life is based) is a model has the following characteristics:
 
 * It is made up of a collection of *cells*. 
-* The cells live on a 2D *grid*. 
+* The cells live on a 2D *grid* — like a chessboard, but extending infinitely in all directions. 
 * Each cell has one of two *states* (e.g., dead or alive, 0 or 1, off or on) at any one point in time.
 * Each cell has a *neighborhood* of cells adjacent to it.
 
@@ -65,7 +65,7 @@ As you can see, different rules produce drastically different results. The magic
     Can you see the similarities to a cellular automaton?[/caption]
 [/Aside]
 John Conway set out to find a set of rules for a cellular automaton that would produce interesting and unpredictable patterns. 
-After a period of 18 months, and with the help of copious amounts of tea and a Go board, Conway had done it — he had created Life! 
+After a period of 18 long months, and with the help of copious amounts of tea and a Go board, Conway had done it — he had created Life! 
 
 The Game of Life [made its debut](http://www.ibiblio.org/lifepatterns/october1970.html) in the October 1970 issue of Scientific American. 
 Fellow mathematician Martin Gardner featured Life in his column "Mathematical Games": 
@@ -88,27 +88,30 @@ One just needed to know three things: how to be born, how to die, and how to sur
 * **Death rule**: Any live cell with zero or one live neighbors will die of loneliness; any live cell with four or more live neighbors will die of overcrowding.
 * **Survival rule**: A live cell with two or three live neighbors will survive.
 
+Let's see these rules in action. 
+
+*<insert interactive module here>*
+[br/]
+
+At first glance, these rules seem far too simplistic to create anything interesting, right? 
+Well, before we judge too soon, let's see an example of what Life looks like on a larger scale.
+
+![game-of-life](static/images/game-of-life.gif)
+[br/]
+
+This seems... ridiculous. How could those three rules produce something that looks like *that*? 
+Dare I say... something that looks *alive*?
+This is the key to why Conway's Life has been the object of so much fascination 
 
 
-# Technical Details
 
-## Installation
+## Life is universal
 
-- Make sure you have `idyll` installed (`npm i -g idyll`).
-- Clone this repo and run `npm install`.
-
-## Developing a post locally
-
-Run `idyll`.
-
-## Building a post for production
-
-Run `idyll build`. The output will appear in the top-level `build` folder. To change the output location, change the `output` option in `package.json`.
-
-## Deploying
-
-Make sure your post has been built, then deploy the docs folder via any static hosting service.
-
-## Dependencies
-
-You can install custom dependencies by running `npm install <package-name> --save`. Note that any collaborators will also need download the package locally by running `npm install` after pulling the changes.
+[Youtube
+  id:"xP5-iIeKXE8"
+  play:true
+  audio:true
+  width:600
+  height:400
+  options:`{ controls: 1 }`
+  /]
