@@ -12,6 +12,7 @@
 /* custom styles, borrowed from https://github.com/jheer/barnes-hut/blob/master/docs/styles.css */
 body {
     margin: 0;
+    font-size: 14px;
 }
 
 h1.hed {
@@ -36,7 +37,7 @@ h2.dek {
     margin: 0 auto;
     padding: 60px 0;
     margin-bottom: 60px;
-    width: 800px;
+    width: 700px;
     margin-left: 10vw;
 }
 

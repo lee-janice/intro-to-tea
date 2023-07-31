@@ -18,7 +18,7 @@
   [caption style:`{fontSize: '12px', width: '300px'}`]Legendary mathematician [John Horton Conway](https://en.wikipedia.org/wiki/John_Horton_Conway) (1937-2020)[/caption]
 [/Aside]
 
-Now, this article isn't about Hasbro's family board game hit "The Game of Life", nor, unfortunately, the secrets that may underlie the true game of Life —
+No, this article isn't about Hasbro's family board game hit "The Game of Life", nor, unfortunately, the secrets that may underlie the true game of Life —
 rather, it's about mathematician John Conway's 1970s brainchild that captured the minds of many professional and amateur players alike. 
 And while his creation doesn't quite contain the answers to *Life, the Universe and Everything,* it *does* provoke some tantalizing
 questions about how complex phenomena can emerge from simplicity and about the rules that may (or may not) govern our world.
@@ -38,9 +38,6 @@ A cellular automaton can have many forms, but the canonical one (off of which Li
 [caption style:`{fontSize: '12px', float: 'right', width: '400px'}`]An example of a cellular automaton state at time t ([source](https://natureofcode.com/book/chapter-7-cellular-automata/))
 [/caption]
 
-// ![ca style:`{width: '200px'}`](static/images/ca-example.jpg)
-// [caption style:`{fontSize: '12px', float: 'right', width: '400px'}`]An example of a cellular automaton state at time t, where white cells are "dead" and black cells are "alive" ([source](https://www.researchgate.net/figure/A-cellular-automaton-consist-of-a-regular-grid-of-cells-each-containing-astate-chosen_fig1_324935995))[/caption]
-
 [br/]
 [br/]
 
@@ -57,7 +54,6 @@ Let's test out some rules for ourselves.
 As you can see, different rules produce drastically different results. The magic of Life lies in how one defines these rules. 
 
 ## Life begins
-
 
 [Aside]
   ![go style:`{width: '200px'}`](static/images/go.png)
@@ -94,18 +90,77 @@ Let's see these rules in action.
 [br/]
 
 At first glance, these rules seem far too simplistic to create anything interesting, right? 
-Well, before we judge too soon, let's see an example of what Life looks like on a larger scale.
+Well, before we judge them too soon, let's see an example of what Life looks like on a larger scale.
 
 ![game-of-life](static/images/game-of-life.gif)
 [br/]
 
-This seems... ridiculous. How could those three rules produce something that looks like *that*? 
+This seems... ridiculous. How could those three limited rules produce something that looks like *that*? 
 Dare I say... something that looks *alive*?
-This is the key to why Conway's Life has been the object of so much fascination 
+This is the key to why Conway's Life has been the object of so much fascination over the years: 
+the idea that something so simple can lead to something unimaginably complex
+makes one dream about the emergence of Life as we know it; and wonder if Nature, too, may abide by principles as simple as these. 
 
+## Classifying Life's "organisms"
+
+Let's put aside the philosophical implications for now. 
+Something that you may notice from the previous demonstration is that there seem to be common objects in Life, or "Life forms". 
+This hadn't gone unnoticed by enthusiasts, and soon a taxonomy of Life's organisms began to emerge. 
+
+The three most common types of organisms were:
+
+* what Conway endearingly referred to as *still lifes*, patterns that stay the same from one generation to the next,
+* *oscillators*, which eventually return to their initial state, and 
+* *spaceships*, which "move" across the grid. 
+
+Can you identify one of each type of organism? 
+
+*<insert interactive module here>*
+[br/]
+
+An [incredibly extensive amount of work](https://conwaylife.com/wiki/) has been done to identify and classify different Life forms, and new discoveries are still being made to this day. 
+
+## Life's primordial soup
+
+The rules of Life aren't the only things that determine how it plays out. 
+Another equally-important aspect is the *initial condition* of the automaton.
+For example, what if the initial state of the grid had no live cells at all? 
+Or just one live cell? Or if all of the cells were alive?
+What would happen in the next generation? 
+
+If you answered "nothing", you'd be correct. According to the rules, in all three cases, there would be no live cells in the next generation.
+Thus, the initial conditions of the system matter. Let's see what happens when the Game of Life is played out with two different initial conditions. 
+
+*<insert interactive module here>*
+[br/]
+
+In the Game of Life, small changes in the initial condition can lead to drastically large changes over time.
+This characteristic is a hallmark of a [complex system](https://en.wikipedia.org/wiki/Complex_system), other examples of which include the climate, the human brain, and ultimately, the Universe.
+
+[Aside]
+  ![mandlebrot](static/images/mandlebrot.gif)
+  [caption style:`{fontSize: '12px', width: '300px'}`]Zooming into the boundary of the Mandlebrot set: an infinite edge of chaos[/caption]
+[/Aside]
+Many complex systems are hypothesized to possess a critical region called an [edge of chaos](https://en.wikipedia.org/wiki/Edge_of_chaos), or a transition space between order and disorder in which complexity lies. 
+(...)
 
 
 ## Life is universal
+
+![life-is-universal](static/images/life-is-universal.webp)
+[br/]
+
+The final mindblowing characteristic of Life that I'll introduce you to is the idea that, as Conway proved in 1982, "Life is universal".
+This statement is admittedly phrased quite sensationally! 
+The true meaning, although not quite as shocking as it may initially sound, is still absolutely extraordinary.
+
+What Conway proved about his Life is that *it is capable of computing anything computable*. 
+Anything that any old computer can compute, the Game of Life can compute also: it is "theoretically as powerful as any computer with unlimited memory and no time constraints". 
+It is equivalent to a [universal Turing machine](https://en.wikipedia.org/wiki/Universal_Turing_machine); it is [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness). 
+
+This is, once again, absolutely bonkers. To think that this simple game, with only three rules behind it, can simulate any computer? 
+The notion sounds insane. 
+But, the proof is in the pudding, and I'll leave you with this mind-boggling and slightly-terrifying video:
 
 [Youtube
   id:"xP5-iIeKXE8"
