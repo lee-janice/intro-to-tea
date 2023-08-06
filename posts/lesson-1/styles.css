@@ -1,0 +1,124 @@
+.d3-component svg {
+    background: #ddd;
+    max-height: 300px;
+}
+
+@media all and (max-width: 1000px) {
+    .d3-component svg {
+        max-height: 200px;
+    }
+}
+
+/*
+* ----------------------------------------------
+* custom HTML and class styles
+* borrowed from https://github.com/jheer/barnes-hut/blob/master/docs/styles.css 
+* ----------------------------------------------
+*/
+body {
+    margin: 0;
+    font-size: 14px;
+}
+
+h1.hed {
+    font-size: 2.2em;
+    margin-top: 0;
+    text-align: left;
+}
+
+h2.dek {
+    font-size: 1.6em;
+    text-align: left;
+}
+
+mark {
+    background-color: beige;
+}
+
+.byline,
+.idyll-pub-date {
+    text-align: left;
+}
+
+.idyll-root {
+    box-sizing: border-box;
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 60px 0;
+    margin-bottom: 60px;
+    width: 700px;
+    margin-left: 22vw;
+}
+
+.idyll-text-container {
+    max-width: 800px;
+}
+
+.section {
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.article-header {
+    width: 800px;
+    max-width: 90vw;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    margin-bottom: 45px;
+}
+
+.nav {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    padding: 72px 30px 0px 0px;
+    height: 100vh;
+    border-right: 1px solid rgb(89, 89, 89);
+    background-color: white;
+}
+
+.nav ul {
+    list-style-type: none;
+}
+
+/*
+* ----------------------------------------------
+* flashcards styles 
+* ----------------------------------------------
+*/
+
+.flashcards {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.flashcard {
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 2px 3px 23px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+}
+
+.front {
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back {
+    width: 85%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
