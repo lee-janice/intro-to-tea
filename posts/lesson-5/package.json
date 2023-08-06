@@ -1,5 +1,5 @@
 {
-    "name": "lesson-1",
+    "name": "lesson-5",
     "version": "1.0.0",
     "license": "MIT",
     "type": "module",
@@ -8,7 +8,7 @@
         "layout": "centered",
         "css": "styles.css",
         "authorView": false,
-        "output": "../../docs/lesson-1/",
+        "output": "../../docs/lesson-5/",
         "components": [
             "../../components/",
             "components"

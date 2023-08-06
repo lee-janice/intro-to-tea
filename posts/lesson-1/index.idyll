@@ -6,7 +6,7 @@
     [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
   [/div]
   [ul]
-    [li][The origins of Life](./)[/li]
+    [li][The origins of Life](../lesson-1)[/li]
     [li][Life begins](../lesson-2/)[/li]
     [li][Three simple rules](../lesson-3/)[/li]
     [li][Classifying Life’s “organisms”](../lesson-4/)[/li]
@@ -24,24 +24,33 @@
   color:"#222222"
    /]
 
-// # The origins of Life
+## Cellular automata
 
+[Aside]
+  ![john-von-neumann style:`{width: '200px'}`](../../static/images/john-von-neumann.jpg)
+  [caption style:`{fontSize: '12px', width: '300px'}`]Legendary mathematician John von Neumann (1903-1957)[/caption]
+[/Aside]
+In order to understand Conway's Game of Life, we must first look to another legendary mathematician's creation: 
+[John von Neumann](https://en.wikipedia.org/wiki/John_von_Neumann)'s [mark]cellular automata[/mark].
+A cellular automaton can have many forms, but the canonical one (off of which Life is based) is defined as 
+a model that has the following characteristics:
 
-Conway's Game of Life has its roots in another legendary mathematician's creation: [John von Neumann](https://en.wikipedia.org/wiki/John_von_Neumann)'s [mark]cellular automata[/mark].
-A cellular automaton can have many forms, but the canonical one (off of which Life is based) is a model has the following characteristics:
+* It is made up of a collection of **cells**. 
+* The cells live on a **2D grid** — like a chessboard, but extending infinitely in all directions. 
+* Each cell has one of two **states** (e.g., dead or alive, 0 or 1, off or on) at any one point in time.
+* Each cell has a **neighborhood** of cells adjacent to it.
 
-* It is made up of a collection of *cells*. 
-* The cells live on a 2D *grid* — like a chessboard, but extending infinitely in all directions. 
-* Each cell has one of two *states* (e.g., dead or alive, 0 or 1, off or on) at any one point in time.
-* Each cell has a *neighborhood* of cells adjacent to it.
+The picture below demonstrates what a cellular automaton may look like.
 
 ![ca style:`{width: '200px'}`](../../static/images/ca.png)
-[caption style:`{fontSize: '12px', float: 'right', width: '400px'}`]An example of a cellular automaton state at time t ([source](https://natureofcode.com/book/chapter-7-cellular-automata/))
+[caption style:`{fontSize: '12px', float: 'right', width: '400px'}`]An example of a cellular automaton ([source](https://natureofcode.com/book/chapter-7-cellular-automata/))
 [/caption]
 
+[br/]
+[br/]
+Before we move on, let's make sure that we have the four basic components of a cellular automaton down.
+Use the flashcards below to test your knowledge.
 
-[br/]
-[br/]
 [Flashcards cards:`[
   {"question": "The individual components that make up a cellular automaton", "answer": "Cells", "bq": false, "ba": true},
   {"question": "The cells that are adjacent to a particular cell", "answer": "Neighborhood", "bq": false, "ba": true},
@@ -49,134 +58,61 @@ A cellular automaton can have many forms, but the canonical one (off of which Li
   {"question": "Information that describes the condition of each cell", "answer": "State", "bq": false, "ba": true},
 ]` /]
 [br/]
-[br/]
+
+## Rules for change
 
 The state of an automaton evolves over time, 
 just like how the state of a game of chess or checkers changes with each player's move.
 But rather than being determined by the calculations of two opposing players, 
-the next state of an automaton is determined according to a set of *rules* that change the state of each cell according to the states of its neighbors.  
+[mark]the next state of an automaton is determined according to a set of **rules**[/mark] 
+that change the state of each cell according to the states of its neighbors.  
 
-Let's test out some rules for ourselves. 
+Let's look at an example. 
 
-*<insert interactive module here>*
+### Example 1
+
+[div style:`{border: "1px solid black", padding: "15px", borderRadius: "5px"}`]
+  [b] Rule 1A: [/b] A cell becomes alive if 5 or more of its neighbors are alive.
+  [br/]
+  [b] Rule 1B: [/b]A cell dies if 4 or fewer of its neighbors are alive.
+[/div]
 [br/]
 
-As you can see, different rules produce drastically different results. The magic of Life lies in how one defines these rules. 
+For each automaton below, 
+will the red cell be dead or alive in the next generation?
 
-## Life begins
-
-[Aside]
-  ![go style:`{width: '200px'}`](static/images/go.png)
-  [caption style:`{fontSize: '12px', width: '300px'}`]One state of a [Go](https://en.wikipedia.org/wiki/Go_(game) board, an ancient Chinese board game in which the concepts of Life and Death are pivotal. 
-    Can you see the similarities to a cellular automaton?[/caption]
-[/Aside]
-John Conway set out to find a set of rules for a cellular automaton that would produce interesting and unpredictable patterns. 
-After a period of 18 long months, and with the help of copious amounts of tea and a Go board, Conway had done it — he had created Life! 
-
-The Game of Life [made its debut](http://www.ibiblio.org/lifepatterns/october1970.html) in the October 1970 issue of Scientific American. 
-Fellow mathematician Martin Gardner featured Life in his column "Mathematical Games": 
-a series of articles meant to introduce readers to the delights of mathematics and of puzzles and problem solving.
-In this article, Gardner described Conway's aims for his creation:
-
-> 1. There should be no initial pattern for which there is a simple proof that the population can grow without limit.
-> 2. There should be initial patterns that apparently do grow without limit.
-> 3. There should be simple initial patterns that grow and change for a considerable period of time before coming to end in three possible ways: fading away completely (from overcrowding or becoming too sparse), settling into a stable configuration that remains unchanged thereafter, or entering an oscillating phase in which they repeat an endless cycle of two or more periods. 
-> In brief, the rules should be such as to make the behavior of the population unpredictable. 
-
-as well as the three constraints that ultimately fulfilled these aims.
-
-## Three simple rules: birth, death, survival
-
-The rules to the Game of Life that Conway had discovered were fantastically simple. 
-One just needed to know three things: how to be born, how to die, and how to survive. 
-
-* **Birth rule**: A dead cell with exactly three live neighbors will become alive.
-* **Death rule**: Any live cell with zero or one live neighbors will die of loneliness; any live cell with four or more live neighbors will die of overcrowding.
-* **Survival rule**: A live cell with two or three live neighbors will survive.
-
-Let's see these rules in action. 
-
-*<insert interactive module here>*
+[h4]Question 1[/h4]
+[Automaton cols:"3" answer:"0" cells:`[
+  0, 1, 0, 
+  1, 2, 1, 
+  0, 1, 0
+]` /]
+[br/]
 [br/]
 
-At first glance, these rules seem far too simplistic to create anything interesting, right? 
-Well, before we judge them too soon, let's see an example of what Life looks like on a larger scale.
-
-![game-of-life](static/images/game-of-life.gif)
+[h4]Question 2[/h4]
+[Automaton cols:"3" answer:"0" cells:`[
+  1, 0, 0, 
+  0, 2, 0, 
+  0, 1, 0
+]` /]
+[br/]
 [br/]
 
-This seems... ridiculous. How could those three limited rules produce something that looks like *that*? 
-Dare I say... something that looks *alive*?
-This is the key to why Conway's Life has been the object of so much fascination over the years: 
-the idea that something so simple can lead to something unimaginably complex
-makes one dream about the emergence of Life as we know it; and wonder if Nature, too, may abide by principles as simple as these. 
-
-## Classifying Life's "organisms"
-
-Let's put aside the philosophical implications for now. 
-Something that you may notice from the previous demonstration is that there seem to be common objects in Life, or "Life forms". 
-This hadn't gone unnoticed by enthusiasts, and soon a taxonomy of Life's organisms began to emerge. 
-
-The three most common types of organisms were:
-
-* what Conway endearingly referred to as *still lifes*, patterns that stay the same from one generation to the next,
-* *oscillators*, which eventually return to their initial state, and 
-* *spaceships*, which "move" across the grid. 
-
-Can you identify one of each type of organism? 
-
-*<insert interactive module here>*
+[h4]Question 3[/h4]
+[Automaton cols:"3" answer:"1" cells:`[
+  0, 1, 1, 
+  1, 2, 1, 
+  0, 1, 0
+]` /]
+[br/]
+[br/]
 [br/]
 
-An [incredibly extensive amount of work](https://conwaylife.com/wiki/) has been done to identify and classify different Life forms, and new discoveries are still being made to this day. 
+As we will soon see, different rules can produce drastically different results. The magic of Life lies in how one defines these rules. 
+[form action:"../lesson-2/"]
+[button className:"next" type:"submit" ]
+  Next Lesson
+[/button]
+[/form]
 
-## Life's primordial soup
-
-The rules of Life aren't the only things that determine how it plays out. 
-Another equally-important aspect is the *initial condition* of the automaton.
-For example, what if the initial state of the grid had no live cells at all? 
-Or just one live cell? Or if all of the cells were alive?
-What would happen in the next generation? 
-
-If you answered "nothing", you'd be correct. According to the rules, in all three cases, there would be no live cells in the next generation.
-Thus, the initial conditions of the system matter. Let's see what happens when the Game of Life is played out with two different initial conditions. 
-
-*<insert interactive module here>*
-[br/]
-
-In the Game of Life, small changes in the initial condition can lead to drastically large changes over time.
-This characteristic is a hallmark of a [complex system](https://en.wikipedia.org/wiki/Complex_system), other examples of which include the climate, the human brain, and ultimately, the Universe.
-
-[Aside]
-  ![mandlebrot](static/images/mandlebrot.gif)
-  [caption style:`{fontSize: '12px', width: '300px'}`]Zooming into the boundary of the Mandlebrot set: an infinite edge of chaos[/caption]
-[/Aside]
-Many complex systems are hypothesized to possess a critical region called an [edge of chaos](https://en.wikipedia.org/wiki/Edge_of_chaos), or a transition space between order and disorder in which complexity lies. 
-(...)
-
-
-## Life is universal
-
-![life-is-universal](static/images/life-is-universal.webp)
-[br/]
-
-The final mindblowing characteristic of Life that I'll introduce you to is the idea that, as Conway proved in 1982, "Life is universal".
-This statement is admittedly phrased quite sensationally! 
-The true meaning, although not quite as shocking as it may initially sound, is still absolutely extraordinary.
-
-What Conway proved about his Life is that *it is capable of computing anything computable*. 
-Anything that any old computer can compute, the Game of Life can compute also: it is "theoretically as powerful as any computer with unlimited memory and no time constraints". 
-It is equivalent to a [universal Turing machine](https://en.wikipedia.org/wiki/Universal_Turing_machine); it is [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness). 
-
-This is, once again, absolutely bonkers. To think that this simple game, with only three rules behind it, can simulate any computer? 
-The notion sounds insane. 
-But, the proof is in the pudding, and I'll leave you with this mind-boggling and slightly-terrifying video:
-
-[Youtube
-  id:"xP5-iIeKXE8"
-  play:true
-  audio:true
-  width:600
-  height:400
-  options:`{ controls: 1 }`
-  /]
