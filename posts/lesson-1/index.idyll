@@ -1,10 +1,10 @@
 [meta title:"The origins of Life" description:"Short description of your project" /]
 
 [div className: "nav"]
-  [div className: "title"]
+  [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
     [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
     [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
-  [/div]
+  [/a]
   [ul]
     [li][The origins of Life](../lesson-1)[/li]
     [li][Life begins](../lesson-2/)[/li]
@@ -48,6 +48,8 @@ The picture below demonstrates what a cellular automaton may look like.
 
 [br/]
 [br/]
+### Knowledge check
+
 Before we move on, let's make sure that we have the four basic components of a cellular automaton down.
 Use the flashcards below to test your knowledge.
 
@@ -69,7 +71,7 @@ that change the state of each cell according to the states of its neighbors.
 
 Let's look at an example. 
 
-### Example 1
+### Knowledge check
 
 [div style:`{border: "1px solid black", padding: "15px", borderRadius: "5px"}`]
   [b] Rule 1A: [/b] A cell becomes alive if 5 or more of its neighbors are alive.
@@ -82,7 +84,7 @@ For each automaton below,
 will the red cell be dead or alive in the next generation?
 
 [h4]Question 1[/h4]
-[Automaton cols:"3" answer:"0" cells:`[
+[AutomatonExample cols:"3" answer:"0" cells:`[
   0, 1, 0, 
   1, 2, 1, 
   0, 1, 0
@@ -91,7 +93,7 @@ will the red cell be dead or alive in the next generation?
 [br/]
 
 [h4]Question 2[/h4]
-[Automaton cols:"3" answer:"0" cells:`[
+[AutomatonExample cols:"3" answer:"0" cells:`[
   1, 0, 0, 
   0, 2, 0, 
   0, 1, 0
@@ -100,7 +102,7 @@ will the red cell be dead or alive in the next generation?
 [br/]
 
 [h4]Question 3[/h4]
-[Automaton cols:"3" answer:"1" cells:`[
+[AutomatonExample cols:"3" answer:"1" cells:`[
   0, 1, 1, 
   1, 2, 1, 
   0, 1, 0

@@ -1,12 +1,12 @@
 [meta title:"The origins of Life" description:"Short description of your project" /]
 
 [div className: "nav"]
-  [div className: "title"]
+  [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
     [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
     [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
-  [/div]
+  [/a]
   [ul]
-    [li][The origins of Life](../lesson-1/)[/li]
+    [li][The origins of Life](../lesson-1)[/li]
     [li][Life begins](../lesson-2/)[/li]
     [li][Three simple rules](../lesson-3/)[/li]
     [li][Classifying Life’s “organisms”](../lesson-4/)[/li]
@@ -24,27 +24,65 @@
   color:"#222222"
    /]
 
-## Life begins
+## Conway's goals
 
 [Aside]
-  ![go style:`{width: '200px'}`](../../static/images/go.png)
-  [caption style:`{fontSize: '12px', width: '300px'}`]One state of a [Go](https://en.wikipedia.org/wiki/Go_(game) board, an ancient Chinese board game in which the concepts of Life and Death are pivotal. 
-    Can you see the similarities to a cellular automaton?[/caption]
+  ![mathematical-games style:`{width: '200px'}`](../../static/images/mathematical-games.png)
+  [caption style:`{fontSize: '12px', width: '300px'}`]
+    The article that revealed Conway's creation to the world
+  [/caption]
 [/Aside]
-John Conway set out to find a set of rules for a cellular automaton that would produce interesting and unpredictable patterns. 
-After a period of 18 long months, and with the help of copious amounts of tea and a Go board, Conway had done it — he had created Life! 
+John Conway set out [mark]to find a set of rules that would produce interesting and varied patterns[/mark]. 
+As fellow mathematician Martin Gardner would later describe in his Scientific American column "Mathematical Games", 
+where the Game of Life [made its debut](http://www.ibiblio.org/lifepatterns/october1970.html), 
+Conway searched for rules that would fulfill three characteristics:
 
-The Game of Life [made its debut](http://www.ibiblio.org/lifepatterns/october1970.html) in the October 1970 issue of Scientific American. 
-Fellow mathematician Martin Gardner featured Life in his column "Mathematical Games": 
-a series of articles meant to introduce readers to the delights of mathematics and of puzzles and problem solving.
-In this article, Gardner described Conway's aims for his creation:
+// [var images: `[
+//   { "url": "../../static/images/vn-ca.png", "title": "1. There should be no initial pattern for which there is a simple proof that the population can grow without limit."}, 
+//   { "url": "../../static/images/gol.png", "title": "2. There should be initial patterns that apparently do grow without limit."}, 
+//   { "url": "../../static/images/gol.png", "title": "3. There should be simple initial patterns that grow and change for a considerable period of time before coming to end in three possible ways: fading away completely (from overcrowding or becoming too sparse), settling into a stable configuration that remains unchanged thereafter, or entering an oscillating phase in which they repeat an endless cycle of two or more periods."}
+// ]` /] 
+// [Slider images:images width:"110%"/]
 
 > 1. There should be no initial pattern for which there is a simple proof that the population can grow without limit.
 > 2. There should be initial patterns that apparently do grow without limit.
 > 3. There should be simple initial patterns that grow and change for a considerable period of time before coming to end in three possible ways: fading away completely (from overcrowding or becoming too sparse), settling into a stable configuration that remains unchanged thereafter, or entering an oscillating phase in which they repeat an endless cycle of two or more periods. 
-> In brief, the rules should be such as to make the behavior of the population unpredictable. 
 
-as well as the three rules that ultimately fulfilled these aims.
+Gardner summarized: [mark]In brief, the rules should be such as to make the behavior of the population unpredictable.[/mark]
+
+Finding these rules proved to be a difficult task. 
+If there were too many conditions where cells would become alive, everything would expand, or grow without limit.
+If there were too many conditions where cells would die, everything would eventually die. 
+Conway had to strike just the right balance.
+
+## Experimenting with the rules
+
+[Aside]
+  ![go style:`{width: '200px'}`](../../static/images/go.png)
+  [caption style:`{fontSize: '12px', width: '300px'}`]One state of a Go board, an ancient Chinese board game in which the concepts of Life and Death are pivotal. 
+    Can you see the similarities to a cellular automaton?[/caption]
+[/Aside]
+Since Conway was working on Life back in 1970, he didn't have the luxury of computing power that we have today,
+meaning that he had to calculate the next state of his automata by hand.
+Since he was an avid [Go](https://en.wikipedia.org/wiki/Go_(game) player, 
+he enlisted the help of a Go board to keep track of the states.
+After a period of 18 long months, and with the help of teatime and his Go board, 
+Conway had done it — he had created Life! 
+
+### Knowledge check
+
+Before we reveal the rules that he discovered, try experimenting yourself with the automaton below. 
+
+[var name:"birth" value:`[1, 2, 3]` /] 
+[var name:"survival" value:`[4, 5, 6]` /] 
+[var name:"death" value:`[7, 8]` /] 
+* A cell will become alive if it has [TextInput value:birth style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
+* A cell will stay alive if it has [TextInput value:survival style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
+* A cell will die if it has [TextInput value:death style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
+
+[Automaton birth:birth survival:survival death:death numRows:25 numCols:65 /]
+
+Did you find any interesting rules? Let's see what Conway found in the next lesson.
 
 [form action:"../lesson-3/"]
 [button className:"next" type:"submit" ]

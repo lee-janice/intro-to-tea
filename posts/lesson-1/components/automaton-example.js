@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Automaton = function ({ cols, cells, answer }) {
+const AutomatonExample = function ({ cols, cells, answer }) {
     const [selection, setSelection] = useState("");
     return (
         <div style={{ display: "inline-block", width: "100%" }}>
@@ -51,4 +51,4 @@ const Automaton = function ({ cols, cells, answer }) {
     );
 };
 
-export default Automaton;
+export default AutomatonExample;

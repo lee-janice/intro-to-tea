@@ -10,7 +10,7 @@ import {
 
 const DropDown = function ({ items }) {
     return (
-        <Accordion allowZeroExpanded={true}>
+        <Accordion allowZeroExpanded={true} allowMultipleExpanded={true}>
             {items.map((item, i) => {
                 return (
                     <AccordionItem key={item.heading}>

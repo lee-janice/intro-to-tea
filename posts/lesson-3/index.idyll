@@ -1,10 +1,10 @@
 [meta title:"The origins of Life" description:"Short description of your project" /]
 
 [div className: "nav"]
-  [div className: "title"]
+  [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
     [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
     [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
-  [/div]
+  [/a]
   [ul]
     [li][The origins of Life](../lesson-1)[/li]
     [li][Life begins](../lesson-2/)[/li]
@@ -29,17 +29,22 @@
 The rules to the Game of Life that Conway had discovered were fantastically simple. 
 One just needed to know three things: how to be born, how to die, and how to survive. 
 
-* **Birth rule**: A dead cell with exactly three live neighbors will become alive.
-* **Death rule**: Any live cell with zero or one live neighbors will die of loneliness; any live cell with four or more live neighbors will die of overcrowding.
-* **Survival rule**: A live cell with two or three live neighbors will survive.
-
-Let's see these rules in action. 
-
-*<insert interactive module here>*
+[DropDown items:`[
+  { "heading": "Birth rule", "panel": "A dead cell with exactly three live neighbors will become alive."}, 
+  { "heading": "Death rule", "panel": "A live cell with zero or one live neighbors will die of loneliness; a live cell with four or more live neighbors will die of overcrowding."}, 
+  { "heading": "Survival rule", "panel": "A live cell with two or three neighbors will survive."}, 
+]` /]
 [br/]
+
+// Let's see these rules in action. 
+
+// *<insert interactive module here>*
+// [br/]
 
 At first glance, these rules seem far too simplistic to create anything interesting, right? 
 Well, before we judge them too soon, let's see an example of what Life looks like on a larger scale.
+
+// [Automaton birth:`[3]` survival:`[2,3]` death:`[0,1,4,5,6,7,8]` numRows:25 numCols:65 /]
 
 ![game-of-life](../../static/images/game-of-life.gif)
 [br/]
@@ -49,6 +54,48 @@ Dare I say... something that looks *alive*?
 This is the key to why Conway's Life has been the object of so much fascination over the years: 
 the idea that something so simple can lead to something unimaginably complex
 makes one dream about the emergence of Life as we know it; and wonder if Nature, too, may abide by principles as simple as these. 
+
+### Knowledge check
+
+Before we move on, let's make sure that we remember the rules for the Game of Life.
+
+[var name:"birthInput" value:"?" /] 
+[var name:"deathInputA" value:"?" /] 
+[var name:"deathInputB" value:"?" /] 
+[var name:"survivalInputA" value:"?" /] 
+[var name:"survivalInputB" value:"?" /] 
+
+#### Birth rule
+
+A dead cell will come alive if it has exactly [TextInput value:birthInput style:`{width: "35px"}` autoComplete:"off" maxLength="1"/] live neighbors.
+[Conditional if:`birthInput==="3"`]
+✅ Nice job, that's correct!
+[/Conditional]
+[Conditional if:`birthInput !== "?" && birthInput !== "" && birthInput!=="3"`]
+❌ Good try! That's not correct, try again?
+[/Conditional]
+
+#### Death rule
+
+A cell will die if it has [TextInput value:deathInputA style:`{width: "35px"}` autoComplete:"off" maxLength="1"/] or fewer 
+or [TextInput value:deathInputB style:`{width: "35px"}` autoComplete:"off" maxLength="1"/] or more live neighbors.
+[Conditional if:`deathInputA==="1" && deathInputB==="4"`]
+✅ Nice job, that's correct!
+[/Conditional]
+[Conditional if:`deathInputA !== "?" && deathInputA !== "" && deathInputB !== "?" && deathInputB !== "" && (deathInputA!=="1" || deathInputB!=="4")`]
+❌ Good try! That's not correct, try again?
+[/Conditional]
+
+#### Survival rule
+
+A cell will survive if it has [TextInput value:survivalInputA style:`{width: "35px"}` autoComplete:"off" maxLength="1"/] 
+or [TextInput value:survivalInputB style:`{width: "35px"}` autoComplete:"off" maxLength="1"/] live neighbors.
+[Conditional if:`(survivalInputA==="2" && survivalInputB==="3") || (survivalInputA==="3" && survivalInputB==="2")`]
+✅ Nice job, that's correct!
+[/Conditional]
+[Conditional if:`survivalInputA !== "?" && survivalInputA !== "" && survivalInputB !== "?" && survivalInputB !== "" && ((survivalInputA!=="2" || survivalInputB!=="3") && (survivalInputA!=="3" || survivalInputB!=="2"))`]
+❌ Good try! That's not correct, try again?
+[/Conditional]
 
 [form action:"../lesson-4/"]
 [button className:"next" type:"submit" ]

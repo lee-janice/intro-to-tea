@@ -9,7 +9,12 @@
     }
 }
 
-/* custom styles, borrowed from https://github.com/jheer/barnes-hut/blob/master/docs/styles.css */
+/*
+* ----------------------------------------------
+* custom HTML and class styles
+* borrowed from https://github.com/jheer/barnes-hut/blob/master/docs/styles.css 
+* ----------------------------------------------
+*/
 body {
     margin: 0;
     font-size: 14px;
@@ -24,6 +29,25 @@ h1.hed {
 h2.dek {
     font-size: 1.6em;
     text-align: left;
+}
+
+mark {
+    background-color: beige;
+}
+
+mark {
+    background-color: beige;
+}
+
+button.next {
+    font-size: 24px;
+    height: 100px;
+    width: 350px;
+    border: 1px solid black;
+}
+
+button.next:hover {
+    background-color: #f4f4f4;
 }
 
 .byline,
@@ -56,6 +80,7 @@ h2.dek {
     padding-top: 45px;
     padding-bottom: 45px;
     margin-bottom: 45px;
+    border-bottom: 1px dashed black;
 }
 
 .nav {

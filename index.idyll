@@ -57,14 +57,6 @@ This guide consists of six lessons in all:
 ]` /]
 [br/]
 
-// 0pxBy the end of the module, you'll know the answers to a variety of questions, such as:
-// [var images: `[
-//   { "url": "./static/images/vn-ca.png", "title": "What is a cellular automaton?"}, 
-//   { "url": "./static/images/gol.png", "title": "How do you play Conway's Game of Life?"}, 
-//   { "url": "./static/images/gol.png", "title": "Why is the Game of Life a complex system?"}, 
-//   { "url": "https://images.unsplash.com/photo-1546768292-fb12f6c92568", "title": "What is the meaning of the phrase 'Life is Universal'?"}
-// ]` /] 
-// [Slider images:images width:"120%"/]
 
 Life awaits, so let's begin!
 [form action:"./lesson-1/"]

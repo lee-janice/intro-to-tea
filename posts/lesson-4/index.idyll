@@ -1,12 +1,12 @@
 [meta title:"The origins of Life" description:"Short description of your project" /]
 
 [div className: "nav"]
-  [div className: "title"]
+  [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
     [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
     [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
-  [/div]
+  [/a]
   [ul]
-    [li][The origins of Life](./)[/li]
+    [li][The origins of Life](../lesson-1)[/li]
     [li][Life begins](../lesson-2/)[/li]
     [li][Three simple rules](../lesson-3/)[/li]
     [li][Classifying Life’s “organisms”](../lesson-4/)[/li]
@@ -18,13 +18,11 @@
 
 [Header
   fullWidth:true
-  title:"The origins of life"
-  subtitle:"Lesson 1"
+  title:"Lesson 4"
+  subtitle:"Classifying Life's organisms"
   background:"#ffffff"
   color:"#222222"
    /]
-
-## Classifying Life's "organisms"
 
 Let's put aside the philosophical implications for now. 
 Something that you may notice from the previous demonstration is that there seem to be common objects in Life, or "Life forms". 
@@ -36,60 +34,21 @@ The three most common types of organisms were:
 * *oscillators*, which eventually return to their initial state, and 
 * *spaceships*, which "move" across the grid. 
 
-Can you identify one of each type of organism? 
+### Knowledge check
 
-*<insert interactive module here>*
+Can you classify each type of organism? 
+
+[div style:`{display: "inline-block", justifyContent: "center"}`]
+[DragAndDrop/]
+[/div]
+
 [br/]
-
 An [incredibly extensive amount of work](https://conwaylife.com/wiki/) has been done to identify and classify different Life forms, and new discoveries are still being made to this day. 
 
-## Life's primordial soup
 
-The rules of Life aren't the only things that determine how it plays out. 
-Another equally-important aspect is the *initial condition* of the automaton.
-For example, what if the initial state of the grid had no live cells at all? 
-Or just one live cell? Or if all of the cells were alive?
-What would happen in the next generation? 
+[form action:"../lesson-5/"]
+[button className:"next" type:"submit" ]
+  Next Lesson
+[/button]
+[/form]
 
-If you answered "nothing", you'd be correct. According to the rules, in all three cases, there would be no live cells in the next generation.
-Thus, the initial conditions of the system matter. Let's see what happens when the Game of Life is played out with two different initial conditions. 
-
-*<insert interactive module here>*
-[br/]
-
-In the Game of Life, small changes in the initial condition can lead to drastically large changes over time.
-This characteristic is a hallmark of a [complex system](https://en.wikipedia.org/wiki/Complex_system), other examples of which include the climate, the human brain, and ultimately, the Universe.
-
-[Aside]
-  ![mandlebrot](static/images/mandlebrot.gif)
-  [caption style:`{fontSize: '12px', width: '300px'}`]Zooming into the boundary of the Mandlebrot set: an infinite edge of chaos[/caption]
-[/Aside]
-Many complex systems are hypothesized to possess a critical region called an [edge of chaos](https://en.wikipedia.org/wiki/Edge_of_chaos), or a transition space between order and disorder in which complexity lies. 
-(...)
-
-
-## Life is universal
-
-![life-is-universal](static/images/life-is-universal.webp)
-[br/]
-
-The final mindblowing characteristic of Life that I'll introduce you to is the idea that, as Conway proved in 1982, "Life is universal".
-This statement is admittedly phrased quite sensationally! 
-The true meaning, although not quite as shocking as it may initially sound, is still absolutely extraordinary.
-
-What Conway proved about his Life is that *it is capable of computing anything computable*. 
-Anything that any old computer can compute, the Game of Life can compute also: it is "theoretically as powerful as any computer with unlimited memory and no time constraints". 
-It is equivalent to a [universal Turing machine](https://en.wikipedia.org/wiki/Universal_Turing_machine); it is [Turing-complete](https://en.wikipedia.org/wiki/Turing_completeness). 
-
-This is, once again, absolutely bonkers. To think that this simple game, with only three rules behind it, can simulate any computer? 
-The notion sounds insane. 
-But, the proof is in the pudding, and I'll leave you with this mind-boggling and slightly-terrifying video:
-
-[Youtube
-  id:"xP5-iIeKXE8"
-  play:true
-  audio:true
-  width:600
-  height:400
-  options:`{ controls: 1 }`
-  /]
