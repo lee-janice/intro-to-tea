@@ -1,24 +1,24 @@
 {
-  "name": "test",
-  "version": "1.0.0",
-  "license": "MIT",
-  "type": "module",
-  "idyll": {
-    "theme": "idyll",
-    "layout": "centered",
-    "css": "styles.css",
-    "authorView": false,
-    "output": "docs/"
-  },
-  "dependencies": {
-    "@dnd-kit/core": "^6.0.8",
-    "d3": "7",
-    "d3-selection": "^2.0.0",
-    "d3-transition": "^2.0.0",
-    "idyll": "6.0.0-alpha.4",
-    "idyll-d3-component": "^2.0.0",
-    "immer": "^10.0.2",
-    "react-accessible-accordion": "^5.0.0",
-    "use-immer": "^0.9.0"
-  }
+    "name": "game-of-life",
+    "version": "1.0.0",
+    "license": "MIT",
+    "type": "module",
+    "idyll": {
+        "theme": "idyll",
+        "layout": "centered",
+        "css": "styles.css",
+        "authorView": false,
+        "output": "docs/"
+    },
+    "dependencies": {
+        "@dnd-kit/core": "^6.0.8",
+        "d3": "7",
+        "d3-selection": "^2.0.0",
+        "d3-transition": "^2.0.0",
+        "idyll": "6.0.0-alpha.4",
+        "idyll-d3-component": "^2.0.0",
+        "immer": "^10.0.2",
+        "react-accessible-accordion": "^5.0.0",
+        "use-immer": "^0.9.0"
+    }
 }

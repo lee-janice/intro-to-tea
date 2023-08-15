@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Flashcard = function ({ card }) {
     const [flipped, setFlipped] = useState(true);
     return (
-        <div className="flashcard" onClick={() => setFlipped(!flipped)}>
+        <div className={`flashcard ${flipped ? "flipped" : ""}`} onClick={() => setFlipped(!flipped)}>
             {flipped ? (
                 <div className="front">
                     {card.bq ? (
@@ -13,7 +13,6 @@ const Flashcard = function ({ card }) {
                     ) : (
                         <div className="question">{card.question}</div>
                     )}
-                    {/* <div className="question">{card.question}</div> */}
                 </div>
             ) : (
                 <div className="back">
@@ -24,7 +23,6 @@ const Flashcard = function ({ card }) {
                     ) : (
                         <div className="answer">{card.answer}</div>
                     )}
-                    {/* <div className="answer">{card.answer}</div> */}
                 </div>
             )}
         </div>

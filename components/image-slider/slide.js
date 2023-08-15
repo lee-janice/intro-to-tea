@@ -7,7 +7,7 @@ export default function Slide({ data: { url, title } }) {
         <div className="slide">
             <img src={url} className="slide-image" />
             <div className="slide-title">
-                <h3>{title}</h3>
+                <b>{title}</b>
             </div>
         </div>
     );

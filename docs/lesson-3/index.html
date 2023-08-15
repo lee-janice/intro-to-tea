@@ -5,8 +5,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
     />
-    <title>The origins of Life</title>
-    <meta property="og:title" content="The origins of Life" />
+    <title>Three simple rules</title>
+    <meta property="og:title" content="Three simple rules" />
     <meta charset="utf-8" />
     <meta property="og:type" content="article" />
 
@@ -16,21 +16,21 @@
     <link rel="stylesheet" href="static/idyll_styles.css" />
   </head>
   <body>
-    <div id="idyll-mount"><div data-reactroot=""><div class="idyll-root"><div class=" idyll-text-container"><div class="nav"><a class="title" href="../index.html" style="color:black;text-decoration:none" idyll="[object Object]"><h1 style="margin:0px;padding:0px 0px 0px 25px" id="the-secret-to">The Secret to</h1><h1 style="margin:0px;padding:0px 0px 25px 25px" id="the-game-of-life">the Game of Life</h1></a><ul><li><a href="../lesson-1">The origins of Life</a></li><li><a href="../lesson-2/">Life begins</a></li><li><a href="../lesson-3/">Three simple rules</a></li><li><a href="../lesson-4/">Classifying Life’s “organisms”</a></li><li><a href="../lesson-5/">Life’s primordial soup</a></li><li><a href="../lesson-6/">Life is universal</a></li></ul></div></div><div class="article-header" style="background:#ffffff;color:#222222"><h1 class="hed">Lesson 3</h1><h2 class="dek">Three simple rules</h2></div><div class=" idyll-text-container"><h2 id="birth,-death,-survival">Birth, death, survival</h2><p>The rules to the Game of Life that Conway had discovered were fantastically simple. 
+    <div id="idyll-mount"><div data-reactroot=""><div class="idyll-root"><div class=" idyll-text-container"><div class="nav"><div style="display:inline-block" idyll="[object Object]"><a href="../index.html"><img src="../../static/images/conway-life-glider.png" style="max-width:45px;text-align:left;padding-left:28px" idyll="[object Object]"/></a></div><a class="title" href="../index.html" style="color:black;text-decoration:none" idyll="[object Object]"><h1 style="margin:0px;padding:0px 0px 0px 25px" id="the-secret-to">The Secret to</h1><h1 style="margin:0px;padding:0px 0px 25px 25px" id="the-game-of-life">the Game of Life</h1></a><ul><li><a href="../lesson-1">The origins of Life</a></li><li><a href="../lesson-2/">Life begins</a></li><li style="text-decoration:underline" idyll="[object Object]"><a href="../lesson-3/">Three simple rules</a></li><li><a href="../lesson-4/">Classifying Life’s “organisms”</a></li><li><a href="../lesson-5/">Life’s primordial soup</a></li><li><a href="../lesson-6/">Life is universal</a></li><li style="margin-top:10px;padding-top:10px;border-top:1px dashed black" idyll="[object Object]"><a href="../final-quiz/">📖 Final quiz</a></li></ul></div></div><div class="article-header" style="background:#ffffff;color:#222222"><h1 class="hed">Lesson 3</h1><h2 class="dek">Three simple rules</h2></div><div class=" idyll-text-container"><h2 id="birth,-death,-survival">Birth, death, survival</h2><p>The rules to the Game of Life that Conway had discovered were fantastically simple. 
 One just needed to know three things: how to be born, how to die, and how to survive. </p><br/><p>At first glance, these rules seem far too simplistic to create anything interesting, right? 
 Well, before we judge them too soon, let’s see an example of what Life looks like on a larger scale.</p><img src="../../static/images/game-of-life.gif" alt="game-of-life"/><br/><p>This seems... ridiculous. How could those three limited rules produce something that looks like <em>that</em>? 
 Dare I say... something that looks <em>alive</em>?
 This is the key to why Conway’s Life has been the object of so much fascination over the years: 
 the idea that something so simple can lead to something unimaginably complex
-makes one dream about the emergence of Life as we know it; and wonder if Nature, too, may abide by principles as simple as these. </p><h3 id="knowledge-check">Knowledge check</h3><p>Before we move on, let’s make sure that we remember the rules for the Game of Life.</p><p> <!-- --> <!-- --> <!-- --> <!-- --> </p><h4 id="birth-rule">Birth rule</h4><p>A dead cell will come alive if it has exactly <input type="text" class="" value="?" style="width:35px" autoComplete="off"/> live neighbors.<div style="display:none">
+makes one dream about the emergence of Life as we know it; and wonder if Nature, too, may abide by principles as simple as these. </p><div class="knowledge-check"><h2 id="knowledge-check">Knowledge check</h2><p>Before we move on, let’s make sure that we remember the rules for the Game of Life.</p><p> <!-- --> <!-- --> <!-- --> <!-- --> </p><h4 id="birth-rule">Birth rule</h4><p>A dead cell will come alive if it has exactly <input type="text" class="" value="?" style="width:35px" autoComplete="off" maxLength="1"/> live neighbors.<div style="display:none">
 ✅ Nice job, that’s correct!</div><div style="display:none">
-❌ Good try! That’s not correct, try again?</div></p><h4 id="death-rule">Death rule</h4><p>A cell will die if it has <input type="text" class="" value="?" style="width:35px" autoComplete="off"/> or fewer 
-or <input type="text" class="" value="?" style="width:35px" autoComplete="off"/> or more live neighbors.<div style="display:none">
+❌ Good try! That’s not correct, try again?</div></p><h4 id="death-rule">Death rule</h4><p>A cell will die if it has <input type="text" class="" value="?" style="width:35px" autoComplete="off" maxLength="1"/> or fewer 
+or <input type="text" class="" value="?" style="width:35px" autoComplete="off" maxLength="1"/> or more live neighbors.<div style="display:none">
 ✅ Nice job, that’s correct!</div><div style="display:none">
-❌ Good try! That’s not correct, try again?</div></p><h4 id="survival-rule">Survival rule</h4><p>A cell will survive if it has <input type="text" class="" value="?" style="width:35px" autoComplete="off"/> 
-or <input type="text" class="" value="?" style="width:35px" autoComplete="off"/> live neighbors.<div style="display:none">
+❌ Good try! That’s not correct, try again?</div></p><h4 id="survival-rule">Survival rule</h4><p>A cell will survive if it has <input type="text" class="" value="?" style="width:35px" autoComplete="off" maxLength="1"/> 
+or <input type="text" class="" value="?" style="width:35px" autoComplete="off" maxLength="1"/> live neighbors.<div style="display:none">
 ✅ Nice job, that’s correct!</div><div style="display:none">
-❌ Good try! That’s not correct, try again?</div></p><form action="../lesson-4/"><button class="next" type="submit">
+❌ Good try! That’s not correct, try again?</div></p></div><form action="../lesson-4/"><button class="next" type="submit">
   Next Lesson</button></form></div></div></div></div>
     <script src="static/idyll_index.js"></script>
   </body>

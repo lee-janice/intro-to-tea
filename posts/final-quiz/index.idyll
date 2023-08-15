@@ -1,0 +1,34 @@
+[meta title:"Final quiz" description:"Short description of your project" /]
+
+[div className: "nav"]
+  [div style:`{display: "inline-block"}`]
+    [a href:"../index.html"]
+      [img src:"../../static/images/conway-life-glider.png" style:`{maxWidth: "45px", textAlign: "left", paddingLeft: "28px"}`/]
+    [/a]
+  [/div]
+  [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
+    [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
+    [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
+  [/a]
+  [ul]
+    [li][The origins of Life](../lesson-1)[/li]
+    [li][Life begins](../lesson-2/)[/li]
+    [li][Three simple rules](../lesson-3/)[/li]
+    [li][Classifying Life’s “organisms”](../lesson-4/)[/li]
+    [li][Life’s primordial soup](../lesson-5/)[/li]
+    [li][Life is universal](../lesson-6/)[/li]
+    [li style:`{textDecoration: "underline", marginTop: "10px", paddingTop: "10px", borderTop: "1px dashed black"}`][📖 Final quiz](../final-quiz/)[/li]
+  [/ul]
+[/div]
+
+
+[Header
+  fullWidth:true
+  title:"Final quiz"
+  subtitle:"Test your knowledge of the Game of Life"
+  background:"#ffffff"
+  color:"#222222"
+   /]
+
+
+[Quiz /]

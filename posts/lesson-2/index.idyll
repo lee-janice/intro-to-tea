@@ -1,17 +1,23 @@
-[meta title:"The origins of Life" description:"Short description of your project" /]
+[meta title:"Life begins" description:"Short description of your project" /]
 
 [div className: "nav"]
+  [div style:`{display: "inline-block"}`]
+    [a href:"../index.html"]
+      [img src:"../../static/images/conway-life-glider.png" style:`{maxWidth: "45px", textAlign: "left", paddingLeft: "28px"}`/]
+    [/a]
+  [/div]
   [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
     [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
     [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
   [/a]
   [ul]
     [li][The origins of Life](../lesson-1)[/li]
-    [li][Life begins](../lesson-2/)[/li]
+    [li style:`{textDecoration: "underline"}`][Life begins](../lesson-2/)[/li]
     [li][Three simple rules](../lesson-3/)[/li]
     [li][Classifying Life’s “organisms”](../lesson-4/)[/li]
     [li][Life’s primordial soup](../lesson-5/)[/li]
     [li][Life is universal](../lesson-6/)[/li]
+    [li style:`{marginTop: "10px", paddingTop: "10px", borderTop: "1px dashed black"}`][📖 Final quiz](../final-quiz/)[/li]
   [/ul]
 [/div]
 
@@ -37,16 +43,16 @@ As fellow mathematician Martin Gardner would later describe in his Scientific Am
 where the Game of Life [made its debut](http://www.ibiblio.org/lifepatterns/october1970.html), 
 Conway searched for rules that would fulfill three characteristics:
 
-// [var images: `[
-//   { "url": "../../static/images/vn-ca.png", "title": "1. There should be no initial pattern for which there is a simple proof that the population can grow without limit."}, 
-//   { "url": "../../static/images/gol.png", "title": "2. There should be initial patterns that apparently do grow without limit."}, 
-//   { "url": "../../static/images/gol.png", "title": "3. There should be simple initial patterns that grow and change for a considerable period of time before coming to end in three possible ways: fading away completely (from overcrowding or becoming too sparse), settling into a stable configuration that remains unchanged thereafter, or entering an oscillating phase in which they repeat an endless cycle of two or more periods."}
-// ]` /] 
-// [Slider images:images width:"110%"/]
+[var images: `[
+  { "url": "../../static/images/transparent.png", "title": "1. There should be no initial pattern for which there is a simple proof that the population can grow without limit."}, 
+  { "url": "", "title": "2. There should be initial patterns that apparently do grow without limit."}, 
+  { "url": "", "title": "3. There should be simple initial patterns that grow and change for a considerable period of time before coming to end in three possible ways: fading away completely (from overcrowding or becoming too sparse), settling into a stable configuration that remains unchanged thereafter, or entering an oscillating phase in which they repeat an endless cycle of two or more periods."}
+]` /] 
+[Slider images:images height:"200px" width:"100%"/]
 
-> 1. There should be no initial pattern for which there is a simple proof that the population can grow without limit.
-> 2. There should be initial patterns that apparently do grow without limit.
-> 3. There should be simple initial patterns that grow and change for a considerable period of time before coming to end in three possible ways: fading away completely (from overcrowding or becoming too sparse), settling into a stable configuration that remains unchanged thereafter, or entering an oscillating phase in which they repeat an endless cycle of two or more periods. 
+// > 1. There should be no initial pattern for which there is a simple proof that the population can grow without limit.
+// > 2. There should be initial patterns that apparently do grow without limit.
+// > 3. There should be simple initial patterns that grow and change for a considerable period of time before coming to end in three possible ways: fading away completely (from overcrowding or becoming too sparse), settling into a stable configuration that remains unchanged thereafter, or entering an oscillating phase in which they repeat an endless cycle of two or more periods. 
 
 Gardner summarized: [mark]In brief, the rules should be such as to make the behavior of the population unpredictable.[/mark]
 
@@ -69,7 +75,8 @@ he enlisted the help of a Go board to keep track of the states.
 After a period of 18 long months, and with the help of teatime and his Go board, 
 Conway had done it — he had created Life! 
 
-### Knowledge check
+[div className:"knowledge-check"]
+## Knowledge check
 
 Before we reveal the rules that he discovered, try experimenting yourself with the automaton below. 
 
@@ -80,7 +87,8 @@ Before we reveal the rules that he discovered, try experimenting yourself with t
 * A cell will stay alive if it has [TextInput value:survival style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
 * A cell will die if it has [TextInput value:death style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
 
-[Automaton birth:birth survival:survival death:death numRows:25 numCols:65 /]
+[Automaton birth:birth survival:survival death:death numRows:25 numCols:60 /]
+[/div]
 
 Did you find any interesting rules? Let's see what Conway found in the next lesson.
 

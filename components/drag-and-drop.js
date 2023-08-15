@@ -12,6 +12,8 @@ function Draggable(props) {
     const style = {
         display: "inline-block",
         margin: "5px",
+        // height: "32px",
+        // lineHeight: "50%",
         border: "1px solid black",
         borderRadius: "5px",
         transform: CSS.Translate.toString(transform),
@@ -30,7 +32,7 @@ function Droppable(props) {
     });
     const style = {
         float: "left",
-        margin: "15px",
+        margin: "5px",
         textAlign: "center",
         height: "250px",
         width: "200px",
@@ -62,7 +64,7 @@ const DragAndDrop = function ({}) {
             <div
                 style={{
                     float: "left",
-                    margin: "15px",
+                    margin: "5px",
                     textAlign: "center",
                     height: "250px",
                     width: "200px",

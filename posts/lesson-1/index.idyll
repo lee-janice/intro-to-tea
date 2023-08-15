@@ -1,17 +1,23 @@
 [meta title:"The origins of Life" description:"Short description of your project" /]
 
 [div className: "nav"]
+  [div style:`{display: "inline-block"}`]
+    [a href:"../index.html"]
+      [img src:"../../static/images/conway-life-glider.png" style:`{maxWidth: "45px", textAlign: "left", paddingLeft: "28px"}`/]
+    [/a]
+  [/div]
   [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
     [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
     [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
   [/a]
   [ul]
-    [li][The origins of Life](../lesson-1)[/li]
+    [li style:`{textDecoration: "underline"}`][The origins of Life](../lesson-1)[/li]
     [li][Life begins](../lesson-2/)[/li]
     [li][Three simple rules](../lesson-3/)[/li]
     [li][Classifying Life’s “organisms”](../lesson-4/)[/li]
     [li][Life’s primordial soup](../lesson-5/)[/li]
     [li][Life is universal](../lesson-6/)[/li]
+    [li style:`{marginTop: "10px", paddingTop: "10px", borderTop: "1px dashed black"}`][📖 Final quiz](../final-quiz/)[/li]
   [/ul]
 [/div]
 
@@ -27,7 +33,7 @@
 ## Cellular automata
 
 [Aside]
-  ![john-von-neumann style:`{width: '200px'}`](../../static/images/john-von-neumann.jpg)
+  ![john-von-neumann](../../static/images/john-von-neumann.jpg)
   [caption style:`{fontSize: '12px', width: '300px'}`]Legendary mathematician John von Neumann (1903-1957)[/caption]
 [/Aside]
 In order to understand Conway's Game of Life, we must first look to another legendary mathematician's creation: 
@@ -45,10 +51,10 @@ The picture below demonstrates what a cellular automaton may look like.
 ![ca style:`{width: '200px'}`](../../static/images/ca.png)
 [caption style:`{fontSize: '12px', float: 'right', width: '400px'}`]An example of a cellular automaton ([source](https://natureofcode.com/book/chapter-7-cellular-automata/))
 [/caption]
+[br/]
 
-[br/]
-[br/]
-### Knowledge check
+[div className:"knowledge-check"]
+## Knowledge check
 
 Before we move on, let's make sure that we have the four basic components of a cellular automaton down.
 Use the flashcards below to test your knowledge.
@@ -60,6 +66,7 @@ Use the flashcards below to test your knowledge.
   {"question": "Information that describes the condition of each cell", "answer": "State", "bq": false, "ba": true},
 ]` /]
 [br/]
+[/div]
 
 ## Rules for change
 
@@ -71,7 +78,8 @@ that change the state of each cell according to the states of its neighbors.
 
 Let's look at an example. 
 
-### Knowledge check
+[div className:"knowledge-check"]
+## Knowledge check
 
 [div style:`{border: "1px solid black", padding: "15px", borderRadius: "5px"}`]
   [b] Rule 1A: [/b] A cell becomes alive if 5 or more of its neighbors are alive.
@@ -107,9 +115,7 @@ will the red cell be dead or alive in the next generation?
   1, 2, 1, 
   0, 1, 0
 ]` /]
-[br/]
-[br/]
-[br/]
+[/div]
 
 As we will soon see, different rules can produce drastically different results. The magic of Life lies in how one defines these rules. 
 [form action:"../lesson-2/"]

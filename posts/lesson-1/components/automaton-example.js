@@ -36,8 +36,7 @@ const AutomatonExample = function ({ cols, cells, answer }) {
             <div
                 style={{
                     display: selection === "" ? "none" : "inline-block",
-                    marginLeft: "50px",
-                    // marginTop: "15px",
+                    margin: "25px 0px 0px 50px",
                     padding: "10px",
                     border: "1px solid black",
                     borderRadius: "5px",

@@ -1,6 +1,11 @@
-[meta title:"The origins of Life" description:"Short description of your project" /]
+[meta title:"Classifying Life's organisms" description:"Short description of your project" /]
 
 [div className: "nav"]
+  [div style:`{display: "inline-block"}`]
+    [a href:"../index.html"]
+      [img src:"../../static/images/conway-life-glider.png" style:`{maxWidth: "45px", textAlign: "left", paddingLeft: "28px"}`/]
+    [/a]
+  [/div]
   [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
     [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
     [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
@@ -9,9 +14,10 @@
     [li][The origins of Life](../lesson-1)[/li]
     [li][Life begins](../lesson-2/)[/li]
     [li][Three simple rules](../lesson-3/)[/li]
-    [li][Classifying Life’s “organisms”](../lesson-4/)[/li]
+    [li style:`{textDecoration: "underline"}`][Classifying Life’s “organisms”](../lesson-4/)[/li]
     [li][Life’s primordial soup](../lesson-5/)[/li]
     [li][Life is universal](../lesson-6/)[/li]
+    [li style:`{marginTop: "10px", paddingTop: "10px", borderTop: "1px dashed black"}`][📖 Final quiz](../final-quiz/)[/li]
   [/ul]
 [/div]
 
@@ -24,25 +30,39 @@
   color:"#222222"
    /]
 
+## Identifying Life forms
+
 Let's put aside the philosophical implications for now. 
 Something that you may notice from the previous demonstration is that there seem to be common objects in Life, or "Life forms". 
 This hadn't gone unnoticed by enthusiasts, and soon a taxonomy of Life's organisms began to emerge. 
 
-The three most common types of organisms were:
+[div className:"knowledge-check"]
+## Knowledge check
+
+Spend some time running the Game of Life automaton below to see if you can identify different types of Life forms.
+
+[Automaton birth:`[3]` survival:`[2,3]` death:`[0,1,4,5,6,7,8]` numRows:40 numCols:60 /]
+[/div]
+
+## Three common organisms
+
+The three most common types of organisms in Life were:
 
 * what Conway endearingly referred to as *still lifes*, patterns that stay the same from one generation to the next,
 * *oscillators*, which eventually return to their initial state, and 
 * *spaceships*, which "move" across the grid. 
 
-### Knowledge check
+[div className:"knowledge-check" style:`{width: "110%"}`]
+## Knowledge check
 
-Can you classify each type of organism? 
+Can you classify each type of organism? If you get stuck, try to spot them in the above automaton.
 
 [div style:`{display: "inline-block", justifyContent: "center"}`]
 [DragAndDrop/]
 [/div]
 
-[br/]
+[/div]
+
 An [incredibly extensive amount of work](https://conwaylife.com/wiki/) has been done to identify and classify different Life forms, and new discoveries are still being made to this day. 
 
 

@@ -53,17 +53,15 @@ const Slider = function ({ images, width, height, autoPlay, autoPlayTime }) {
                     items,
                 }}
             >
-                {/* <Arrows /> */}
                 <div className="arrows">
                     <div className="arrow left" onClick={() => changeSlide(-1)}>
-                        ←
+                        〈
                     </div>
                     <div className="arrow right" onClick={() => changeSlide(1)}>
-                        →
+                        〉
                     </div>
                 </div>
                 <SlidesList />
-                {/* <Dots /> */}
             </SliderContext.Provider>
         </div>
     );

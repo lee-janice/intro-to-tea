@@ -1,6 +1,11 @@
-[meta title:"The origins of Life" description:"Short description of your project" /]
+[meta title:"Three simple rules" description:"Short description of your project" /]
 
 [div className: "nav"]
+  [div style:`{display: "inline-block"}`]
+    [a href:"../index.html"]
+      [img src:"../../static/images/conway-life-glider.png" style:`{maxWidth: "45px", textAlign: "left", paddingLeft: "28px"}`/]
+    [/a]
+  [/div]
   [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
     [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
     [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
@@ -8,10 +13,11 @@
   [ul]
     [li][The origins of Life](../lesson-1)[/li]
     [li][Life begins](../lesson-2/)[/li]
-    [li][Three simple rules](../lesson-3/)[/li]
+    [li style:`{textDecoration: "underline"}`][Three simple rules](../lesson-3/)[/li]
     [li][Classifying Life’s “organisms”](../lesson-4/)[/li]
     [li][Life’s primordial soup](../lesson-5/)[/li]
     [li][Life is universal](../lesson-6/)[/li]
+    [li style:`{marginTop: "10px", paddingTop: "10px", borderTop: "1px dashed black"}`][📖 Final quiz](../final-quiz/)[/li]
   [/ul]
 [/div]
 
@@ -55,7 +61,8 @@ This is the key to why Conway's Life has been the object of so much fascination 
 the idea that something so simple can lead to something unimaginably complex
 makes one dream about the emergence of Life as we know it; and wonder if Nature, too, may abide by principles as simple as these. 
 
-### Knowledge check
+[div className:"knowledge-check"]
+## Knowledge check
 
 Before we move on, let's make sure that we remember the rules for the Game of Life.
 
@@ -67,7 +74,7 @@ Before we move on, let's make sure that we remember the rules for the Game of Li
 
 #### Birth rule
 
-A dead cell will come alive if it has exactly [TextInput value:birthInput style:`{width: "35px"}` autoComplete:"off" maxLength="1"/] live neighbors.
+A dead cell will come alive if it has exactly [TextInput value:birthInput style:`{width: "35px"}` autoComplete:"off" maxLength:"1"/] live neighbors.
 [Conditional if:`birthInput==="3"`]
 ✅ Nice job, that's correct!
 [/Conditional]
@@ -77,8 +84,8 @@ A dead cell will come alive if it has exactly [TextInput value:birthInput style:
 
 #### Death rule
 
-A cell will die if it has [TextInput value:deathInputA style:`{width: "35px"}` autoComplete:"off" maxLength="1"/] or fewer 
-or [TextInput value:deathInputB style:`{width: "35px"}` autoComplete:"off" maxLength="1"/] or more live neighbors.
+A cell will die if it has [TextInput value:deathInputA style:`{width: "35px"}` autoComplete:"off" maxLength:"1"/] or fewer 
+or [TextInput value:deathInputB style:`{width: "35px"}` autoComplete:"off" maxLength:"1"/] or more live neighbors.
 [Conditional if:`deathInputA==="1" && deathInputB==="4"`]
 ✅ Nice job, that's correct!
 [/Conditional]
@@ -88,14 +95,16 @@ or [TextInput value:deathInputB style:`{width: "35px"}` autoComplete:"off" maxLe
 
 #### Survival rule
 
-A cell will survive if it has [TextInput value:survivalInputA style:`{width: "35px"}` autoComplete:"off" maxLength="1"/] 
-or [TextInput value:survivalInputB style:`{width: "35px"}` autoComplete:"off" maxLength="1"/] live neighbors.
+A cell will survive if it has [TextInput value:survivalInputA style:`{width: "35px"}` autoComplete:"off" maxLength:"1"/] 
+or [TextInput value:survivalInputB style:`{width: "35px"}` autoComplete:"off" maxLength:"1"/] live neighbors.
 [Conditional if:`(survivalInputA==="2" && survivalInputB==="3") || (survivalInputA==="3" && survivalInputB==="2")`]
 ✅ Nice job, that's correct!
 [/Conditional]
 [Conditional if:`survivalInputA !== "?" && survivalInputA !== "" && survivalInputB !== "?" && survivalInputB !== "" && ((survivalInputA!=="2" || survivalInputB!=="3") && (survivalInputA!=="3" || survivalInputB!=="2"))`]
 ❌ Good try! That's not correct, try again?
 [/Conditional]
+
+[/div]
 
 [form action:"../lesson-4/"]
 [button className:"next" type:"submit" ]
