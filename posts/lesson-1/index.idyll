@@ -1,23 +1,21 @@
-[meta title:"The origins of Life" description:"Short description of your project" /]
+[meta title:"A brief history of tea" description:"A brief history of tea" /]
 
 [div className: "nav"]
   [div style:`{display: "inline-block"}`]
     [a href:"../index.html"]
-      [img src:"../../static/images/conway-life-glider.png" style:`{maxWidth: "45px", textAlign: "left", paddingLeft: "28px"}`/]
+      [img src:"../../../static/images/tea_icon.jpg" style:`{maxWidth: "64px", textAlign: "left", paddingLeft: "28px"}`/]
     [/a]
   [/div]
   [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
-    [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
-    [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
+    [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]An Introduction[/h1]
+    [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]to Tea[/h1]
   [/a]
   [ul]
-    [li style:`{textDecoration: "underline"}`][The origins of Life](../lesson-1)[/li]
-    [li][Life begins](../lesson-2/)[/li]
-    [li][Three simple rules](../lesson-3/)[/li]
-    [li][Classifying Life’s “organisms”](../lesson-4/)[/li]
-    [li][Life’s primordial soup](../lesson-5/)[/li]
-    [li][Life is universal](../lesson-6/)[/li]
-    [li style:`{marginTop: "10px", paddingTop: "10px", borderTop: "1px dashed black"}`][📖 Final quiz](../final-quiz/)[/li]
+    [li style:`{textDecoration: "underline"}`][A brief history of tea](../lesson-1)[/li]
+    [li][Tea classifications and processing](../lesson-2/)[/li]
+    [li][The chemical composition of tea](../lesson-3/)[/li]
+    [li][Methods of consuming tea](../lesson-4/)[/li]
+    // [li style:`{marginTop: "10px", paddingTop: "10px", borderTop: "1px dashed black"}`][📖 Final quiz](../final-quiz/)[/li]
   [/ul]
 [/div]
 
@@ -25,102 +23,144 @@
 [Header
   fullWidth:true
   title:"Lesson 1"
-  subtitle:"The origins of Life"
+  subtitle:"A brief history of tea"
   background:"#ffffff"
   color:"#222222"
    /]
 
-## Cellular automata
+[Aside]
+  ![tea_history](../../static/images/shennong.jpg)
+  // [caption style:`{fontSize: '12px', width: '300px'}`][/caption]
+[/Aside]
+## Mythical roots
+
+According to legend, the story of tea began in China in 2737 BC. Emperor Shen Tong, a renowned ruler and 
+skilled herbalist, was sitting beneath a tree while his servant was boiling water, when a leaf from the 
+tree drifted into the pot. The Emperor tried the brew and enjoyed the drink so much that he ordered 
+further research into the plant, and thus the cultivation of tea began!
+
+## Historical origins in the East
+
+Containers for tea have been discovered in tombs dating back to the Han dynasty (202 BC–220 AD), 
+but it wasn't until the Tang dynasty (618-907 AD) that the consumption of tea became widespread—so much 
+so that tea was established as the national drink of China.
+
+During the Tang dynasty, a Buddhist monk named Lu Yu (733-804) wrote the *The Classic of Tea*, which is the 
+first known treatise on tea in the world. His work detailed methods and tools for producing, brewing, and drinking tea, 
+as well as the history and philosophy of tea.
 
 [Aside]
-  ![john-von-neumann](../../static/images/john-von-neumann.jpg)
-  [caption style:`{fontSize: '12px', width: '300px'}`]Legendary mathematician John von Neumann (1903-1957)[/caption]
+  ![tea_history](../../static/images/tea_history.webp)
+  // [caption style:`{fontSize: '12px', width: '300px'}`]The globalization of tea.[/caption]
 [/Aside]
-In order to understand Conway's Game of Life, we must first look to another legendary mathematician's creation: 
-[John von Neumann](https://en.wikipedia.org/wiki/John_von_Neumann)'s [mark]cellular automata[/mark].
-A cellular automaton can have many forms, but the canonical one (off of which Life is based) is defined as 
-a model that has the following characteristics:
+Tea was introduced to Japan in the 9th century by Buddhist monks who traveled there from China to study. However, due to the isolated 
+nature of the monasteries in which the plant was first cultivated, its popularity as a drink only became established 
+by the 13th century. 
 
-* It is made up of a collection of **cells**. 
-* The cells live on a **2D grid** — like a chessboard, but extending infinitely in all directions. 
-* Each cell has one of two **states** (e.g., dead or alive, 0 or 1, off or on) at any one point in time.
-* Each cell has a **neighborhood** of cells adjacent to it.
+## The introduction of tea to the West
 
-The picture below demonstrates what a cellular automaton may look like.
+Around the same time that it was introduced to Japan, mention of boiling tea leaves began to appear 
+in trade documents in the Middle East. Additionally, Marco Polo (1254-1324) alluded to the consumption of tea 
+in his writings during his travels. However, it wasn't until the 17th century that tea made a marked appearance 
+in Western culture.  
 
-![ca style:`{width: '200px'}`](../../static/images/ca.png)
-[caption style:`{fontSize: '12px', float: 'right', width: '400px'}`]An example of a cellular automaton ([source](https://natureofcode.com/book/chapter-7-cellular-automata/))
-[/caption]
-[br/]
+The first to bring tea to the West were Portuguese missionaries, but it was the Dutch who 
+first began to commercially trade tea. In 1610, the Dutch East India Company brought shipments of Japanese and 
+Chinese tea to the European shores, and spread rapidly across the continent, though it was primarily consumed
+by those in the royal and aristocratic classes.
+
+Tea gained a foothold in Britain with the marriage of Charles II to Portuguese princess Catherine of Braganza, 
+who was a certified tea addict. Her love of the beverage legitimized it as a fashionable drink among the upper classes. 
+Soon after, the British East India Trade Company was established, and soon became the world's dominant trading power.
+Then, through the unfortunate and harrowing acts of colonization, tea spread to other regions such as India and the Americas.
+
+## Tea drinking in the modern day
+
+Nowadays, tea is ubiquitous across the globe. In 2022, almost 7 billion kilograms of tea was consumed worldwide.
+In a 2022 Statista survey, Turkey had the highest reported rate of tea drinkers, with 90% of respondents saying that 
+they regularly consume tea. In the US and China, respectively, 59% and 45% of respondents regularly consume tea. 
+
+
+## References 
+
+* `https://www.tea.co.uk/history-of-tea`
+* `https://www.peets.com/blogs/peets/a-history-of-tea`
+* `https://www.britannica.com/topic/tea-beverage`
+* `https://www.statista.com/statistics/940102/global-tea-consumption/`
+* `https://www.statista.com/chart/29582/share-of-people-that-drink-tea-in-selected-countries/`
+
 
 [div className:"knowledge-check"]
 ## Knowledge check
 
-Before we move on, let's make sure that we have the four basic components of a cellular automaton down.
-Use the flashcards below to test your knowledge.
+Before we move on, let's do a knowledge check!
+Use the flashcards below to test what you've learned.
 
 [Flashcards cards:`[
-  {"question": "The individual components that make up a cellular automaton", "answer": "Cells", "bq": false, "ba": true},
-  {"question": "The cells that are adjacent to a particular cell", "answer": "Neighborhood", "bq": false, "ba": true},
-  {"question": "The spatial structure on which the cells reside", "answer": "2D grid", "bq": false, "ba": true},
-  {"question": "Information that describes the condition of each cell", "answer": "State", "bq": false, "ba": true},
+  {"question": "The princess who popularized tea in England", "answer": "Catherine of Braganza", "bq": false, "ba": true},
+  {"question": "The Tang Dynasty monk who wrote The Classic of Tea", "answer": "Lu Yu (733-804)", "bq": false, "ba": true},
+  {"question": "The first country to bring tea to the European continent", "answer": "Portugal", "bq": false, "ba": true},
+  {"question": "The group who brought tea to Japan in the 9th century", "answer": "Buddhist monks", "bq": false, "ba": true},
 ]` /]
 [br/]
 [/div]
 
-## Rules for change
+Now that we've covered the historical origins of tea, let's dive deeper into the various types of teas and the 
+processing mechanisms behind each type.
 
-The state of an automaton evolves over time, 
-just like how the state of a game of chess or checkers changes with each player's move.
-But rather than being determined by the calculations of two opposing players, 
-[mark]the next state of an automaton is determined according to a set of **rules**[/mark] 
-that change the state of each cell according to the states of its neighbors.  
-
-Let's look at an example. 
-
-[div className:"knowledge-check"]
-## Knowledge check
-
-[div style:`{border: "1px solid black", padding: "15px", borderRadius: "5px"}`]
-  [b] Rule 1A: [/b] A cell becomes alive if 5 or more of its neighbors are alive.
-  [br/]
-  [b] Rule 1B: [/b]A cell dies if 4 or fewer of its neighbors are alive.
-[/div]
-[br/]
-
-For each automaton below, 
-will the red cell be dead or alive in the next generation?
-
-[h4]Question 1[/h4]
-[AutomatonExample cols:"3" answer:"0" cells:`[
-  0, 1, 0, 
-  1, 2, 1, 
-  0, 1, 0
-]` /]
-[br/]
-[br/]
-
-[h4]Question 2[/h4]
-[AutomatonExample cols:"3" answer:"0" cells:`[
-  1, 0, 0, 
-  0, 2, 0, 
-  0, 1, 0
-]` /]
-[br/]
-[br/]
-
-[h4]Question 3[/h4]
-[AutomatonExample cols:"3" answer:"1" cells:`[
-  0, 1, 1, 
-  1, 2, 1, 
-  0, 1, 0
-]` /]
-[/div]
-
-As we will soon see, different rules can produce drastically different results. The magic of Life lies in how one defines these rules. 
 [form action:"../lesson-2/"]
 [button className:"next" type:"submit" ]
   Next Lesson
 [/button]
 [/form]
+
+
+// ## Rules for change
+
+// The state of an automaton evolves over time, 
+// just like how the state of a game of chess or checkers changes with each player's move.
+// But rather than being determined by the calculations of two opposing players, 
+// [mark]the next state of an automaton is determined according to a set of **rules**[/mark] 
+// that change the state of each cell according to the states of its neighbors.  
+
+// Let's look at an example. 
+
+// [div className:"knowledge-check"]
+// ## Knowledge check
+
+// [div style:`{border: "1px solid black", padding: "15px", borderRadius: "5px"}`]
+//   [b] Rule 1A: [/b] A cell becomes alive if 5 or more of its neighbors are alive.
+//   [br/]
+//   [b] Rule 1B: [/b]A cell dies if 4 or fewer of its neighbors are alive.
+// [/div]
+// [br/]
+
+// For each automaton below, 
+// will the red cell be dead or alive in the next generation?
+
+// [h4]Question 1[/h4]
+// [AutomatonExample cols:"3" answer:"0" cells:`[
+//   0, 1, 0, 
+//   1, 2, 1, 
+//   0, 1, 0
+// ]` /]
+// [br/]
+// [br/]
+
+// [h4]Question 2[/h4]
+// [AutomatonExample cols:"3" answer:"0" cells:`[
+//   1, 0, 0, 
+//   0, 2, 0, 
+//   0, 1, 0
+// ]` /]
+// [br/]
+// [br/]
+
+// [h4]Question 3[/h4]
+// [AutomatonExample cols:"3" answer:"1" cells:`[
+//   0, 1, 1, 
+//   1, 2, 1, 
+//   0, 1, 0
+// ]` /]
+// [/div]
 

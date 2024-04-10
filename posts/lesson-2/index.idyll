@@ -1,23 +1,21 @@
-[meta title:"Life begins" description:"Short description of your project" /]
+[meta title:"Tea classifications and processing" description:"Tea classifications and processing" /]
 
 [div className: "nav"]
   [div style:`{display: "inline-block"}`]
     [a href:"../index.html"]
-      [img src:"../../static/images/conway-life-glider.png" style:`{maxWidth: "45px", textAlign: "left", paddingLeft: "28px"}`/]
+      [img src:"../../../static/images/tea_icon.jpg" style:`{maxWidth: "64px", textAlign: "left", paddingLeft: "28px"}`/]
     [/a]
   [/div]
   [a className: "title" href:"../index.html" style:`{color: "black", textDecoration: "none"}`]
-    [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]The Secret to[/h1]
-    [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]the Game of Life[/h1]
+    [h1 style:`{margin: "0px", padding: "0px 0px 0px 25px"}`]An Introduction[/h1]
+    [h1 style:`{margin: "0px", padding: "0px 0px 25px 25px"}`]to Tea[/h1]
   [/a]
   [ul]
-    [li][The origins of Life](../lesson-1)[/li]
-    [li style:`{textDecoration: "underline"}`][Life begins](../lesson-2/)[/li]
-    [li][Three simple rules](../lesson-3/)[/li]
-    [li][Classifying Life’s “organisms”](../lesson-4/)[/li]
-    [li][Life’s primordial soup](../lesson-5/)[/li]
-    [li][Life is universal](../lesson-6/)[/li]
-    [li style:`{marginTop: "10px", paddingTop: "10px", borderTop: "1px dashed black"}`][📖 Final quiz](../final-quiz/)[/li]
+    [li][A brief history of tea](../lesson-1)[/li]
+    [li style:`{textDecoration: "underline"}`][Tea classifications and processing](../lesson-2/)[/li]
+    [li][The chemical composition of tea](../lesson-3/)[/li]
+    [li][Methods of consuming tea](../lesson-4/)[/li]
+    // [li style:`{marginTop: "10px", paddingTop: "10px", borderTop: "1px dashed black"}`][📖 Final quiz](../final-quiz/)[/li]
   [/ul]
 [/div]
 
@@ -25,72 +23,127 @@
 [Header
   fullWidth:true
   title:"Lesson 2"
-  subtitle:"Life begins"
+  subtitle:"Tea classifications and processing"
   background:"#ffffff"
   color:"#222222"
    /]
 
-## Conway's goals
+## Types of tea
 
-[Aside]
-  ![mathematical-games style:`{width: '200px'}`](../../static/images/mathematical-games.png)
-  [caption style:`{fontSize: '12px', width: '300px'}`]
-    The article that revealed Conway's creation to the world
-  [/caption]
-[/Aside]
-John Conway set out [mark]to find a set of rules that would produce interesting and varied patterns[/mark]. 
-As fellow mathematician Martin Gardner would later describe in his Scientific American column "Mathematical Games", 
-where the Game of Life [made its debut](http://www.ibiblio.org/lifepatterns/october1970.html), 
-Conway searched for rules that would fulfill three characteristics:
-
+Most tea experts recognize six types of tea. 
 [var images: `[
-  { "url": "../../static/images/transparent.png", "title": "1. There should be no initial pattern for which there is a simple proof that the population can grow without limit."}, 
-  { "url": "", "title": "2. There should be initial patterns that apparently do grow without limit."}, 
-  { "url": "", "title": "3. There should be simple initial patterns that grow and change for a considerable period of time before coming to end in three possible ways: fading away completely (from overcrowding or becoming too sparse), settling into a stable configuration that remains unchanged thereafter, or entering an oscillating phase in which they repeat an endless cycle of two or more periods."}
+  { "url": "", "title": "White tea"},
+  { "url": "", "title": "Yellow tea"}, 
+  { "url": "", "title": "Green tea"}, 
+  { "url": "", "title": "Oolong tea"},
+  { "url": "", "title": "Black tea"},
+  { "url": "", "title": "Fermented tea"}
 ]` /] 
-[Slider images:images height:"200px" width:"100%"/]
+[Slider images:images height:"200px" width:"75%"/]
 
-// > 1. There should be no initial pattern for which there is a simple proof that the population can grow without limit.
-// > 2. There should be initial patterns that apparently do grow without limit.
-// > 3. There should be simple initial patterns that grow and change for a considerable period of time before coming to end in three possible ways: fading away completely (from overcrowding or becoming too sparse), settling into a stable configuration that remains unchanged thereafter, or entering an oscillating phase in which they repeat an endless cycle of two or more periods. 
-
-Gardner summarized: [mark]In brief, the rules should be such as to make the behavior of the population unpredictable.[/mark]
-
-Finding these rules proved to be a difficult task. 
-If there were too many conditions where cells would become alive, everything would expand, or grow without limit.
-If there were too many conditions where cells would die, everything would eventually die. 
-Conway had to strike just the right balance.
-
-## Experimenting with the rules
+The differences between the teas' appearances are shown below:
 
 [Aside]
-  ![go style:`{width: '200px'}`](../../static/images/go.png)
-  [caption style:`{fontSize: '12px', width: '300px'}`]One state of a Go board, an ancient Chinese board game in which the concepts of Life and Death are pivotal. 
-    Can you see the similarities to a cellular automaton?[/caption]
+  [div style:`{fontSize: '12px', textAlign: 'left', width: '200px'}`]
+    Types of tea, from the [University of Waikato, 2013](https://www.sciencelearn.org.nz/resources/1661-the-science-of-tea). 
+  [/div]
 [/Aside]
-Since Conway was working on Life back in 1970, he didn't have the luxury of computing power that we have today,
-meaning that he had to calculate the next state of his automata by hand.
-Since he was an avid [Go](https://en.wikipedia.org/wiki/Go_(game) player, 
-he enlisted the help of a Go board to keep track of the states.
-After a period of 18 long months, and with the help of teatime and his Go board, 
-Conway had done it — he had created Life! 
+![classification style:`{width: '200px'}`](../../static/images/tea-types.jpg)
+[br/]
 
-[div className:"knowledge-check"]
-## Knowledge check
+These categories are determined by the processing that the tea leaves undergo, which drastically 
+affects the tea's qualities. In its general form, processing tea involves different ways of 
+oxidizing the leaves, stopping the oxidation process, and drying the leaves. 
 
-Before we reveal the rules that he discovered, try experimenting yourself with the automaton below. 
+The classification chart below demonstrates the processing that each category of tea undergoes.
+In the following section, we'll dive into more detail regarding the processing steps.
 
-[var name:"birth" value:`[1, 2, 3]` /] 
-[var name:"survival" value:`[4, 5, 6]` /] 
-[var name:"death" value:`[7, 8]` /] 
-* A cell will become alive if it has [TextInput value:birth style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
-* A cell will stay alive if it has [TextInput value:survival style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
-* A cell will die if it has [TextInput value:death style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
+[Aside]
+  [div style:`{fontSize: '12px', textAlign: 'left', width: '200px'}`]
+    Tea classification chart, from [Tea Epicure](https://teaepicure.com/tea-classification/).
+  [/div]
+[/Aside]
+![classification style:`{width: '200px'}`](../../static/images/tea-processing-chart.png)
+[br/]
 
-[Automaton birth:birth survival:survival death:death numRows:25 numCols:60 /]
-[/div]
+## Withering
 
-Did you find any interesting rules? Let's see what Conway found in the next lesson.
+As soon as a tea leaf is plucked, it begins to wilt. Withering is essentially the process of 
+controlled wilting, which prepares the leaves for processing by reducing their moisture content. 
+The process usually occurs either outside or indoors in troughs with forced air.
+The withering process is complete once the tea leaves have lost around 30-50% of their moisture, 
+which typically takes 8-20 hours. 
+
+The withering process causes the membranes of the tea leaves to open, making them more supple and 
+less prone to breaking in further processing steps. Withering also has chemical effects: the 
+chlorophyll in the leaf begins to disintegrate, caffeine levels increase, new flavor and aroma 
+compounds develop, and grassy flavors dissipate. So, the "grassier" teas, like green tea, are 
+typically withered for a short amount of time, or sometimes not at all.
+
+[Aside]
+  [div style:`{fontSize: '12px', textAlign: 'left', width: '200px'}`]
+    Indoor withering troughs, from [Food Tech Notes](https://foodtechnotes.com/2020/08/22/tea-processing-withering/).
+  [/div]
+[/Aside]
+![classification style:`{width: '200px'}`](../../static/images/tea-withering.jpg)
+[br/]
+
+## Rolling/Bruising
+
+## Oxidizing
+
+Fixing is the process of slightly heating the tea leaves. This procedure is done to stop the 
+oxidation of the leaves, which begins during the withering process as the cells in the leaves 
+are damaged. The heat denatures the oxidative enzymes in the leaf and greatly slows the oxidation process.
+
+A tea that has been fixed retains its green color and vegetal taste. Semi-oxidized tea leaves 
+present with a slight browning, and produce a more yellow liquid with a more complex flavor. 
+Fully oxidized tea leaves will be a dark brown and produce a dark red liquid. Thus, controlling the 
+oxidation of the leaves controls the flavor and chemcial profile of the tea.
+
+## Fixing
+
+Fixing is the process of slightly heating the tea leaves. This procedure is done to stop the 
+oxidation of the leaves, which begins during the withering process as the cells in the leaves 
+are damaged. The heat denatures the oxidative enzymes in the leaf and greatly slows the oxidation process.
+
+A tea that has been fixed retains its green color and vegetal taste. Semi-oxidized tea leaves 
+present with a slight browning, and produce a more yellow liquid with a more complex flavor. 
+Fully oxidized tea leaves will be a dark brown and produce a dark red liquid. Thus, controlling the 
+oxidation of the leaves controls the flavor and chemcial profile of the tea.
+
+## Wrapping
+
+## Drying
+
+## Fermenting 
+
+## References 
+* `https://www.avoury.com/at/en/magazine/the-withering-process-of-tea-leaves`
+* `https://teaepicure.com/tea-leaves-wither/`
+* `https://foodtechnotes.com/2020/08/22/tea-processing-withering/`
+
+* `https://teaepicure.com/tea-leaves-oxidation/`
+* `https://www.teaformeplease.com/how-tea-is-made-fixing/`
+* `https://www.sciencelearn.org.nz/resources/1661-the-science-of-tea`
+
+
+
+
+
+
+[KC/]
+// [var name:"birth" value:`[1, 2, 3]` /] 
+// [var name:"survival" value:`[4, 5, 6]` /] 
+// [var name:"death" value:`[7, 8]` /] 
+// * A cell will become alive if it has [TextInput value:birth style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
+// * A cell will stay alive if it has [TextInput value:survival style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
+// * A cell will die if it has [TextInput value:death style:`{width: "125px"}` autoComplete:"off"/] live neighbors.
+
+// [Automaton birth:birth survival:survival death:death numRows:25 numCols:60 /]
+// [/div]
+
+// Did you find any interesting rules? Let's see what Conway found in the next lesson.
 
 [form action:"../lesson-3/"]
 [button className:"next" type:"submit" ]

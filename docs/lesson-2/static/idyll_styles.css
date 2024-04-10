@@ -1416,6 +1416,19 @@ input[type="text"] {
     margin: 2em 0em 2em 0em;
 }
 
+button.submit {
+    /* position: absolute; */
+    /* transform: translateY(-50%); */
+    /* float: left; */
+    font-size: 20px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+button.submit:hover {
+    background-color: #f4f4f4;
+}
+
 /*
 * ----------------------------------------------
 * flashcards styles 

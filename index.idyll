@@ -1,12 +1,12 @@
-[meta title:"The Secret to the Game of Life" description:"An interactive guide to John Conway's marvelous invention" /]
+[meta title:"An Introduction to Tea" description:"A beginner's guide to the delightful world of Camellia sinensis" /]
 
 [Header
   fullWidth:true
-  title:"The Secret to the Game of Life"
-  subtitle:"An interactive guide to John Conway's marvelous invention"
+  title:"An Introduction to Tea"
+  subtitle:"A beginner's guide to the delightful world of Camellia sinensis"
   author:"Janice Lee"
-  authorLink:"https://idyll-lang.org"
-  date:"August 6, 2023"
+  authorLink:"https://github.com/lee-janice"
+  date:"April 10th, 2024"
   background:"#ffffff"
   color:"#222222"
    /]
@@ -14,51 +14,45 @@
 ## Introduction
 
 [Aside style:`{fontSize: '12px'}`]
-  [br/]
-  [br/]
-  [br/]
-  [br/]
-  ¹The real answer is [42](https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#The_Answer_to_the_Ultimate_Question_of_Life,_the_Universe,_and_Everything_is_42)! 
+  ¹After water, of course!
 [/Aside]
-No, this guide isn't about Hasbro's family board game hit "The Game of Life", nor, 
-unfortunately, the secrets that may underlie the true game of Life itself —
-rather, it's about [mark]mathematician John Conway's 1970s brainchild[/mark] that captured the minds 
-of many professional and amateur players alike. 
-And while his creation doesn't quite contain the answer to *Life, the Universe and Everything,*¹ 
-it *does* provoke some tantalizing questions about [mark]how complex phenomena can emerge from simplicity[/mark] 
-and about the rules that may (or may not) govern our world.
-// [Annotation] 
-//   [Graphic] Anything in here will be shown in the popup. Including, e.g. an image: [Image src:"..." /] [/Graphic]
-//   rThe real answer is [42](https://en.wikipedia.org/wiki/Phrases_from_The_Hitchhiker%27s_Guide_to_the_Galaxy#The_Answer_to_the_Ultimate_Question_of_Life,_the_Universe,_and_Everything_is_42)! 
-//   *Life, the Universe and Everything,* 
-// [/Annotation]
+The [mark]second-most¹[/mark] consumed beverage in the world. 
+A drink of many forms, infused into the cultures of countries across the globe. 
+[mark]Brewed from one humble plant[/mark] that has managed to fuel vast empires of trade, 
+inspire covert smuggling operations, and symbolize a certain colony's protest to the increasingly 
+stringent rule of their mother country—what could this mystical object possibly be? 
+Why, of course, it's [mark]tea[/mark]!
+
+Green tea, black tea, oolong tea, white tea—this is no Dr. Seuss poem, this is [mark]*Camellia sinensis*[/mark]! 
+Despite the wide variations in its color and taste, all (non-herbal) tea is produced from this one singular plant, 
+which is native to East Asia. 
+
 
 [Aside]
   [div style:`{fontSize: '12px', textAlign: 'left', width: '200px'}`]
-    Legendary mathematician [John Horton Conway](https://en.wikipedia.org/wiki/John_Horton_Conway) (1937-2020)
+    A botanical illustration of *Camellia sinensis*: the tea plant, from Köhler's Medicinal Plants, 1897.
   [/div]
 [/Aside]
-![conway style:`{width: '200px'}`](static/images/conway.jpg)
+![camellia style:`{width: '200px'}`](static/images/camellia_sinensis.webp)
 [br/]
 
 ## What you'll learn
 
-In this interactive guide, we'll be going though a basic introduction to John Conway's Game of Life. 
-We'll explore where it came from, define exactly what it is, and examine some of its fascinating characteristics.
-This guide consists of six lessons in all:
+In this introduction, we'll be exploring the magical world of tea. 
+We'll go over the history of tea, its various classifications, processing mechanisms, 
+its chemical composition and potential effects, and different methods of consuming tea. 
+This guide consists of 4 lessons in all:
 
 [DropDown items:`[
-  { "heading": "Lesson 1: The origin of Life", "panel": "What are the intellectual origins of the Game of Life? What is a cellular automaton?"}, 
-  { "heading": "Lesson 2: Life begins", "panel": "What was Conway's purpose for creating the Game of Life? How did he do it?"}, 
-  { "heading": "Lesson 3: Three simple rules", "panel": "What are the three rules of the Game of Life? (Preview: birth, death, survival)"}, 
-  { "heading": "Lesson 4: Classifying Life's organisms", "panel": 'What "creatures" appear in the Game of Life? What are the three most common types?'}, 
-  { "heading": "Lesson 5: Life's primoridal soup", "panel": "What are the initial conditions of a system? Why is Life considered a complex system?"}, 
-  { "heading": "Lesson 6: Life is universal", "panel": 'What is the meaning behind the phrase "Life is Universal"?'}, 
+  { "heading": "Lesson 1: A brief history of tea", "panel": "Where did tea originate? How did it spread across the globe?"}, 
+  { "heading": "Lesson 2: Tea classifications and processing", "panel": "What are the different classifications of tea? How does the processing mechanism determine the classification to which the tea belongs?"}, 
+  { "heading": "Lesson 3: The chemical composition of tea", "panel": "What is the compounds that are found in tea, and what are their effects on its consumption?"}, 
+  { "heading": "Lesson 4: Methods of consuming tea", "panel": "How do you steep and drink tea?"}, 
 ]` /]
 [br/]
 
 
-Life awaits, so let's begin!
+Now that we've made our introductions, let's get brewing!  
 [form action:"./lesson-1/"]
 [button className:"next" type:"submit" ]
   Start the Course
